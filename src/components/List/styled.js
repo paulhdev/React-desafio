@@ -2,11 +2,10 @@ import Styled from 'styled-components'
 
 export const Container = Styled.div`
     display: flex;
-    flex: 1,
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px 5%;
+    padding: 30px 2%;
 `
 
 export const FormClient = Styled.form`
@@ -34,4 +33,11 @@ export const FormClient = Styled.form`
         font-weight: bold;
         cursor: pointer;
     }
+`
+
+export const Title = Styled.h1`
+    padding: 15px 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 `

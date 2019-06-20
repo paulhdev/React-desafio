@@ -1,10 +1,13 @@
 import React from 'react'
 
+import { Container } from './styled'
+
 const Sobre = () => {
     return (
-        <div>
+        <Container>
             <h1>Sobre</h1>
-        </div>
+            <p>Desafio de React JS...</p>
+        </Container>
     )
 }
 
