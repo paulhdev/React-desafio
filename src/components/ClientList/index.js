@@ -11,15 +11,10 @@ class List extends Component {
 
         }
         this.delete = this.delete.bind(this)
-        this.update = this.update.bind(this)
     }
 
     delete(key) {
         this.props.delete(key)
-    }
-
-    update(client) {
-        this.props.update(client)
     }
 
     render() {
@@ -30,7 +25,7 @@ class List extends Component {
                         this.props.data.map(client => {
                             return (
                                 <li key={client.key}>{client.name} <AreaBtn>
-                                    <button onClick={() => this.update(client)}>
+                                    <button>
                                         <FaPencilAlt id="updateBtn" />
                                     </button>
                                     <button onClick={() => this.delete(client.key)}>

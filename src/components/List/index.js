@@ -14,7 +14,6 @@ class List extends Component {
         }
         this.addClient = this.addClient.bind(this)
         this.deleteClient = this.deleteClient.bind(this)
-        this.updateClient = this.updateClient.bind(this)
     }
 
     // Adicionar cliente
@@ -41,19 +40,6 @@ class List extends Component {
        this.setState({ clientList: clientFilter })
     }
 
-    // Atualizar cliente
-    updateClient(client) {
-        this.setState({ nameClient: client.name })
-
-        // let clientName = [ ...this.state.clientList ]
-        // let filtro = clientName.filter(item => {
-        //     if(item.key === client.key) {
-        //         const newName = this.state.nameClient
-        //         this.setState({ nameClient: newName })
-        //     }
-        // })
-    }
-
     render() {
         return (
             <Container>
@@ -62,7 +48,7 @@ class List extends Component {
                     <button type="submit">Salvar</button>
                 </FormClient>
                 <Title>Lista de Clientes</Title>
-                <ClientList data={this.state.clientList} delete={this.deleteClient} update={this.updateClient} />
+                <ClientList data={this.state.clientList} delete={this.deleteClient} />
             </Container>
         )
     }
