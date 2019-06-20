@@ -48,7 +48,7 @@ class List extends Component {
         // let clientName = [ ...this.state.clientList ]
         // let filtro = clientName.filter(item => {
         //     if(item.key === client.key) {
-        //         const newName = this.state.nameClient.value
+        //         const newName = this.state.nameClient
         //         this.setState({ nameClient: newName })
         //     }
         // })
